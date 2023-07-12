@@ -87,13 +87,13 @@ func CreateContactHandler(request events.APIGatewayProxyRequest) (events.APIGate
 	if err != nil {
 		return events.APIGatewayProxyResponse{
 			StatusCode: 500,
-			Body:       "Failed to insert user into DynamoDB",
+			Body:       "Failed to insert item into DynamoDB",
 		}, err
 	}
 
 	return events.APIGatewayProxyResponse{
 		StatusCode: 200,
-		Body:       "User inserted successfully!",
+		Body:       "Item inserted successfully",
 	}, nil
 }
 
@@ -143,7 +143,7 @@ func UpdateContactHandler(request events.APIGatewayProxyRequest) (events.APIGate
 	// Return a successful response
 	return events.APIGatewayProxyResponse{
 		StatusCode: 200,
-		Body:       "User updated successfully!",
+		Body:       "Item updated successfully!",
 	}, nil
 }
 
@@ -217,7 +217,7 @@ func DeleteContactHandler(request events.APIGatewayProxyRequest) (events.APIGate
 	// Return a success response
 	return events.APIGatewayProxyResponse{
 		StatusCode: 200,
-		Body:       "User deleted successfully!",
+		Body:       "User deleted successfully",
 	}, nil
 
 }

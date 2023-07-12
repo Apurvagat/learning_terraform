@@ -1,0 +1,15 @@
+{
+    "postRequest": {
+        "userID": "7",
+        "firstName": "LMN",
+        "lastName": "OPQ",
+        "address": "Sangli",
+        "mobileNumber": "9876540987",
+        "emailAddress": "lmn@gmail.com"
+    },
+
+    "patchRequest": {
+        "firstName": "Rasika",
+        "lastName": "Patil"
+    }
+}
